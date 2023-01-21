@@ -15,17 +15,10 @@ export class BooksComponent implements OnInit {
 
   constructor(private booksService: BooksService) {}
 
-
-  card: Book[] = [];
-
-
   ngOnInit(): void {
     this.books = this.booksService.getBooks()
   }
 
-  addToCard(book: Book) {
-    console.log(book)
-  }
 
   // addToCard(book: Book) {
   //   this.card.push(book)
