@@ -1,7 +1,7 @@
 <h2>Programming Books List!</h2>
 
 <ul>
-    <li *ngFor="let singleBook of books; let i=index" >
-        <app-book [book]="singleBook"></app-book>
+    <li *ngFor="let singleBook of books; let i=index" class="flex flex-wrap justify-center" >
+        <app-book [book]="singleBook" class="w-1/2 p-5 text-center"></app-book>
     </li>
 </ul>
